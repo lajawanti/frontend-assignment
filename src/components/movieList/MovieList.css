@@ -1,0 +1,25 @@
+.movie__list__main {
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.movie__list__main h2 {
+    font-family: "Roboto" !important;
+    margin-left: 38px;
+}
+
+.movie__list__inner {
+    width: 90vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;    
+}
+
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .movie__list__inner {
+        grid-template-columns: 1fr;
+        width: 96vw;
+    }
+}

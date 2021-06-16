@@ -1,7 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './header/Header.js'
 
-const App = () => (
-	<img src={logo} alt="Timescale" />
-)
+import './App.css'
+
+const App = () => {
+	return (
+		<div>
+			<Header />
+		</div>
+)}
 
 export default App;

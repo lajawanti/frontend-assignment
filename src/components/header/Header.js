@@ -4,7 +4,7 @@ import SeachIcon from '../../images/SeachIcon.png';
 
 import './Header.css';
 
-const Header = () => {
+const Header = ({ searchedMovies }) => {
     return (
         <div className = "header">
             <div>
@@ -25,6 +25,7 @@ const Header = () => {
                     className = "search__input"
                     type="search"
                     placeholder = "Search for a movie" 
+                    onInput={(e) => searchedMovies(e)}
                 />
             </div>
         </div>
